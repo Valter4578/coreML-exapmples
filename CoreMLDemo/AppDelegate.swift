@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CoreMLDemo
 //
-//  Created by Sai Kambampati on 14/6/2017.
-//  Copyright © 2017 AppCoda. All rights reserved.
+//  Created by Максим Алексеев on 14/6/2017.
+//  Copyright © 2017 Максим Алексеев. All rights reserved.
 //
 
 import UIKit
