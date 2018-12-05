@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8836C39F21B7FFE6003AEF98 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8836C39E21B7FFE6003AEF98 /* Inceptionv3.mlmodel */; };
 		F44543791EF0461F0024AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44543781EF0461F0024AFAC /* AppDelegate.swift */; };
 		F445437B1EF0461F0024AFAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445437A1EF0461F0024AFAC /* ViewController.swift */; };
 		F445437E1EF0461F0024AFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445437C1EF0461F0024AFAC /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8836C39E21B7FFE6003AEF98 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		F44543751EF0461F0024AFAC /* CoreMLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44543781EF0461F0024AFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445437A1EF0461F0024AFAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,6 +40,7 @@
 		F445436C1EF0461F0024AFAC = {
 			isa = PBXGroup;
 			children = (
+				8836C39E21B7FFE6003AEF98 /* Inceptionv3.mlmodel */,
 				F44543771EF0461F0024AFAC /* CoreMLDemo */,
 				F44543761EF0461F0024AFAC /* Products */,
 			);
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F445437B1EF0461F0024AFAC /* ViewController.swift in Sources */,
+				8836C39F21B7FFE6003AEF98 /* Inceptionv3.mlmodel in Sources */,
 				F44543791EF0461F0024AFAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
