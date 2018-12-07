@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreML
+import Vision
 
 class ViewController: UIViewController {
 
@@ -18,3 +20,15 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: - Methods
+extension ViewController {
+    
+    func detectScene(image: CIImage) {
+        answerLabel.text = "detecting scene..."
+        
+        // Load the ML model through its generated class
+        guard let model = try? VNCoreMLModel(for: GoogLeNetPlaces().model) else {
+            fatalError("can't load Places ML model")
+        }
+    }
+}
