@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8836C39F21B7FFE6003AEF98 /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8836C39E21B7FFE6003AEF98 /* Inceptionv3.mlmodel */; };
+		8846D41F21D101D500AE04F6 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846D41E21D101D500AE04F6 /* StartScreenViewController.swift */; };
+		8846D42121D1029C00AE04F6 /* StartScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846D42021D1029C00AE04F6 /* StartScreenItem.swift */; };
 		F44543791EF0461F0024AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44543781EF0461F0024AFAC /* AppDelegate.swift */; };
 		F445437B1EF0461F0024AFAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F445437A1EF0461F0024AFAC /* ViewController.swift */; };
 		F445437E1EF0461F0024AFAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F445437C1EF0461F0024AFAC /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 
 /* Begin PBXFileReference section */
 		8836C39E21B7FFE6003AEF98 /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = Inceptionv3.mlmodel; path = ../../../../Downloads/Inceptionv3.mlmodel; sourceTree = "<group>"; };
+		8846D41E21D101D500AE04F6 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
+		8846D42021D1029C00AE04F6 /* StartScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenItem.swift; sourceTree = "<group>"; };
 		F44543751EF0461F0024AFAC /* CoreMLDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreMLDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44543781EF0461F0024AFAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F445437A1EF0461F0024AFAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				F445437F1EF0461F0024AFAC /* Assets.xcassets */,
 				F44543811EF0461F0024AFAC /* LaunchScreen.storyboard */,
 				F44543841EF0461F0024AFAC /* Info.plist */,
+				8846D41E21D101D500AE04F6 /* StartScreenViewController.swift */,
+				8846D42021D1029C00AE04F6 /* StartScreenItem.swift */,
 			);
 			path = CoreMLDemo;
 			sourceTree = "<group>";
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8846D42121D1029C00AE04F6 /* StartScreenItem.swift in Sources */,
 				F445437B1EF0461F0024AFAC /* ViewController.swift in Sources */,
 				8836C39F21B7FFE6003AEF98 /* Inceptionv3.mlmodel in Sources */,
+				8846D41F21D101D500AE04F6 /* StartScreenViewController.swift in Sources */,
 				F44543791EF0461F0024AFAC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
