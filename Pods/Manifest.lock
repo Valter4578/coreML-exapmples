@@ -1,0 +1,16 @@
+PODS:
+  - DocumentClassifier (1.0.0)
+
+DEPENDENCIES:
+  - DocumentClassifier (= 1.0.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - DocumentClassifier
+
+SPEC CHECKSUMS:
+  DocumentClassifier: 882774b0317bf8db92c9fa971a48716bea6b73f0
+
+PODFILE CHECKSUM: 24916afd0431c7f7ce06ebec5cbbc80c15e62f9d
+
+COCOAPODS: 1.5.3
