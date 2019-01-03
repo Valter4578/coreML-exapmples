@@ -13,6 +13,7 @@ class StartScreenViewController: UITableViewController {
     //MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,11 +27,24 @@ class StartScreenViewController: UITableViewController {
         return cell
     }
     
+    
+    
     func configureText(for cell: UITableViewCell, with item: StartScreenItem) {
         let label = cell.viewWithTag(1000) as! UILabel
         label.text = item.text
         
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectRow = items[indexPath.row]
+        print(selectRow)
+        if selectRow.text == "Text classifer✍️" {
+            performSegue(withIdentifier: "showDocumentClassification", sender: self)
+        } else if selectRow.text == "Image classifer📷" {
+            performSegue(withIdentifier: "showImageClassification", sender: self)
+        }
+    }
+    
     
     //MARK: - Initializators
     required init?(coder aDecoder: NSCoder) {

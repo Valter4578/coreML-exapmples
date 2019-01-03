@@ -23,6 +23,11 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         super.viewDidLoad()
     }
     
+    //MARK: Actions
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "coreMLToExamples", sender: self)
+    }
     
     
     /// Runs when user click 'camera' button

@@ -10,6 +10,7 @@ import UIKit
 import WebKit
 import DocumentClassifier
 
+
 class DocumentClassificationViewController: UIViewController {
     var model = DocumentClassifier()
     
@@ -43,6 +44,11 @@ class DocumentClassificationViewController: UIViewController {
     @IBAction func done(_ sender: UIBarButtonItem) {
         classify(textView.text)
     }
+    /*
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "documentToExamples", sender: self)
+    }
+    */
     
     
     //MARK: - CoreML
