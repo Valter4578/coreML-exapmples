@@ -282,6 +282,9 @@
                                 <state key="normal" title="Start recognizer">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="startTapped:" destination="nNg-yP-n1p" eventType="touchUpInside" id="KtB-Pq-gA4"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="per-uJ-8oR">
                                 <rect key="frame" x="0.0" y="52" width="375" height="557"/>
@@ -302,6 +305,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Speech to text" id="wLy-7U-ild"/>
+                    <connections>
+                        <outlet property="startButton" destination="LKD-3J-8AU" id="hc9-XV-rsT"/>
+                        <outlet property="textLabel" destination="per-uJ-8oR" id="vTh-Cj-7X5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Phn-e1-EQj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4D83939C760CED85E3FF7199 /* Pods_CoreMLDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C76FCD998A0339B742471159 /* Pods_CoreMLDemo.framework */; };
+		8836424C240EA40200B87595 /* SpeechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8836424B240EA40200B87595 /* SpeechViewController.swift */; };
 		88407F2F2379B34A008BCC5D /* GestureUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88407F2E2379B34A008BCC5D /* GestureUIViewController.swift */; };
 		8846D41F21D101D500AE04F6 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846D41E21D101D500AE04F6 /* StartScreenViewController.swift */; };
 		8846D42121D1029C00AE04F6 /* StartScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8846D42021D1029C00AE04F6 /* StartScreenItem.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		51DAA80A6CF5E71E015410B4 /* Pods-CoreMLDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreMLDemo/Pods-CoreMLDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8836424B240EA40200B87595 /* SpeechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechViewController.swift; sourceTree = "<group>"; };
 		88407F2E2379B34A008BCC5D /* GestureUIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureUIViewController.swift; sourceTree = "<group>"; };
 		8846D41E21D101D500AE04F6 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		8846D42021D1029C00AE04F6 /* StartScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenItem.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 				88AE5FAA21DF530700FBC632 /* FoodClassificationViewController.swift */,
 				88407F2E2379B34A008BCC5D /* GestureUIViewController.swift */,
 				88745C232382C7BC00DC9CA2 /* GestureUIViewController+Camera.swift */,
+				8836424B240EA40200B87595 /* SpeechViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E754A42369B04B0010A834 /* Extension.swift in Sources */,
+				8836424C240EA40200B87595 /* SpeechViewController.swift in Sources */,
 				8846D42121D1029C00AE04F6 /* StartScreenItem.swift in Sources */,
 				88AE5FAD21DF53DD00FBC632 /* Food101.mlmodel in Sources */,
 				8847AD39237C4C7400794E07 /* PlayerView.swift in Sources */,
