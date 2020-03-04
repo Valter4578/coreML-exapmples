@@ -431,7 +431,7 @@
         <!--Navigation Controller-->
         <scene sceneID="o8I-Nu-aTt">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UPO-iM-0FO" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="speechNC" automaticallyAdjustsScrollViewInsets="NO" id="UPO-iM-0FO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rRN-a5-dBR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

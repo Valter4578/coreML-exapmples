@@ -41,7 +41,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate {
         dismiss(animated: true, completion: nil)
     }
     
-    
     /// Runs when user click 'camera' button
     @IBAction func camera(_ sender: Any) {
         // Choose device camera

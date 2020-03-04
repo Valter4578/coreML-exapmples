@@ -20,6 +20,7 @@ class DocumentClassificationViewController: UIViewController {
         formatter.maximumFractionDigits = 1
         return formatter
     }()
+    
     //MARK: - Outlets
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var cetegoryLabel: UILabel!
@@ -28,7 +29,6 @@ class DocumentClassificationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         cetegoryLabel.text = ""
-        // Do any additional setup after loading the view.
     }
     
     
@@ -49,10 +49,6 @@ class DocumentClassificationViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
-    
-    
-    
     //MARK: - CoreML
     
     func classify(_ text: String) {
@@ -64,5 +60,4 @@ class DocumentClassificationViewController: UIViewController {
         print(classification.prediction)
         updateInterface(for: prediction)
     }
-    
 }

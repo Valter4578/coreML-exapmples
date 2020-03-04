@@ -3,7 +3,7 @@
 //  CoreMLDemo
 //
 //  Created by Максим Алексеев on 11.11.2019.
-//  Copyright © 2019 AppCoda. All rights reserved.
+//  Copyright © 2019 Максим Алексеев. All rights reserved.
 //
 
 import UIKit

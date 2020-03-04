@@ -3,7 +3,7 @@
 //  CoreMLDemo
 //
 //  Created by Максим Алексеев on 13.11.2019.
-//  Copyright © 2019 AppCoda. All rights reserved.
+//  Copyright © 2019 Максим Алексеев. All rights reserved.
 //
 
 import AVFoundation

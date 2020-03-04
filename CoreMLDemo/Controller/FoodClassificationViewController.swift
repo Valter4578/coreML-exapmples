@@ -3,7 +3,7 @@
 //  CoreMLDemo
 //
 //  Created by Максим Алексеев on 04/01/2019.
-//  Copyright © 2019 AppCoda. All rights reserved.
+//  Copyright © 2019 Максим Алексеев. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,6 @@ class FoodClassificationViewController: UIViewController, UINavigationController
     //MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Here 2")
     }
     //MARK: - Actions
     @IBAction func library(_ sender: Any) {

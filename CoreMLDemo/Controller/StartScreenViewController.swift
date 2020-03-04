@@ -3,7 +3,7 @@
 //  CoreMLDemo
 //
 //  Created by Максим Алексеев on 24/12/2018.
-//  Copyright © 2018 AppCoda. All rights reserved.
+//  Copyright © 2018 Максим Алексеев. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,6 @@ class StartScreenViewController: UITableViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.prefersLargeTitles = true
         
-        print("Here 1")
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,8 +50,10 @@ class StartScreenViewController: UITableViewController {
             guard let navigationController = storyboard?.instantiateViewController(identifier: "NavigationFoodClassifer") else { return }
             present(navigationController, animated: true, completion: nil)
         case "Touchless UI":
-            //TODO: - Add identifier
             guard let navigationController = storyboard?.instantiateViewController(identifier: "GestureUINC") else { return }
+            present(navigationController, animated: true, completion: nil)
+        case "Speech to text":
+            guard let navigationController = storyboard?.instantiateViewController(identifier: "speechNC") else { return }
             present(navigationController, animated: true, completion: nil)
         default:
             print("presentation error")
@@ -85,8 +86,11 @@ class StartScreenViewController: UITableViewController {
         row3item.emoji =  "👋🏻"
         items.append(row3item)
         
-        print("Here")
-        
+        let row4Item = StartScreenItem()
+        row4Item.text = "Speech to text"
+        row4Item.emoji = "🎤"
+        items.append(row4Item)
+                
         super.init(coder: aDecoder)
     }
 }
