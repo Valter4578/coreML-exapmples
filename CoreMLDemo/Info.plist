@@ -2,8 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>The application will use microphone</string>
+	<key>Microphone Usage Description</key>
+	<string>For recognize your speech application need to permission for use microphone</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
 	<string>The application will use your voice to translate speech to text</string>
 	<key>CFBundleDevelopmentRegion</key>
