@@ -10,7 +10,7 @@ import UIKit
 import Speech
 import AVKit
 
-class SpeechViewController: UIViewController, SFSpeechRecognizerDelegate {
+class SpeechViewController: UIViewController {
     // MARK:- Outlets
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var startButton: UIButton!
@@ -126,7 +126,25 @@ class SpeechViewController: UIViewController, SFSpeechRecognizerDelegate {
     // MARK:- Actions
     
     @IBAction func startTapped(_ sender: UIButton) {
- 
+        if audioEngine?.isRunning ?? false {
+            audioEngine?.stop()
+            request?.endAudio()
+            startButton.isEnabled = false
+            startButton.setTitle("Start recording", for: .normal)
+        } else {
+            startRecording()
+            startButton.setTitle("Stop recording", for: .normal)
+        }
     }
     
+}
+
+extension SpeechViewController: SFSpeechRecognizerDelegate  {
+    func speechRecognizer(_ speechRecognizer: SFSpeechRecognizer, availabilityDidChange available: Bool) {
+        if available {
+            startButton.isEnabled = true
+        } else {
+            startButton.isEnabled = false
+        }
+    }
 }
