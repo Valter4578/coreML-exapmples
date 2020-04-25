@@ -8,7 +8,8 @@
 
 import Foundation
 
-class StartScreenItem {
-    var text: String = ""
-    var emoji: String = ""
+struct StartScreenItem {
+    var text: String
+    var emoji: String
+    let classificationType: CellClassificationType
 }
