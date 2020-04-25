@@ -7,11 +7,11 @@
 //
 
 import UIKit
-import WebKit
 import DocumentClassifier
 
 
-class DocumentClassificationViewController: UIViewController {
+final class DocumentClassificationViewController: UIViewController {
+    //MARK:- Properties
     var model = DocumentClassifier()
     
     lazy var percentFormatter: NumberFormatter = {
@@ -25,19 +25,25 @@ class DocumentClassificationViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var cetegoryLabel: UILabel!
 
-    //MARK: - Standart function's
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         cetegoryLabel.text = ""
     }
     
-    
     //MARK: - Methods
     func updateInterface(for prediction: Classification.Result) {
-        guard let percent = percentFormatter.string(from: NSNumber(value: prediction.probability)) else {
-            return
-        }
+        guard let percent = percentFormatter.string(from: NSNumber(value: prediction.probability)) else { return }
         cetegoryLabel.text = prediction.category.rawValue + " " + "(\(percent))"
+    }
+    
+    func classify(_ text: String) {
+        guard let text = textView.text else { return }
+        guard let classification = model.classify(text) else { return }
+        
+        let prediction = classification.prediction
+        print(classification.prediction)
+        updateInterface(for: prediction)
     }
     
     //MARK: - Action's
@@ -47,17 +53,5 @@ class DocumentClassificationViewController: UIViewController {
     
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
-    }
-    
-    //MARK: - CoreML
-    
-    func classify(_ text: String) {
-        let text = textView.text!
-        guard let classification = model.classify(text) else {
-            return
-        }
-        let prediction = classification.prediction
-        print(classification.prediction)
-        updateInterface(for: prediction)
     }
 }
