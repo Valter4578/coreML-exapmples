@@ -218,7 +218,7 @@
                         <leftBarButtonItems>
                             <barButtonItem systemItem="camera" id="07F-LG-XKG">
                                 <connections>
-                                    <action selector="camera:" destination="BYZ-38-t0r" id="d25-Ka-S9e"/>
+                                    <action selector="openCamera:" destination="BYZ-38-t0r" id="d25-Ka-S9e"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Item" systemItem="cancel" id="bRQ-gr-4Mr">
