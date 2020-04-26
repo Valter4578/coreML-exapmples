@@ -9,10 +9,10 @@
 import UIKit
 
 enum CellClassificationType {
-    case TextClassification
-    case ImageClassification
-    case TouchlessUIClassification
-    case SpeechClassification
+    case textClassification
+    case imageClassification
+    case touchlessUIClassification
+    case speechClassification
 }
 
 @available(iOS 13.0, *)
@@ -40,23 +40,7 @@ class StartScreenViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch items[indexPath.row].classificationType {
-        case .ImageClassification:
-            guard let navigationController = storyboard?.instantiateViewController(identifier: "NavigationImageClassifer") else { return }
-               present(navigationController, animated: true, completion: nil)
-            
-        case .TextClassification:
-            guard let navigationController = storyboard?.instantiateViewController(identifier: "NavigationTextClassifer") else { return }
-            present(navigationController, animated: true, completion: nil)
-            
-        case .SpeechClassification:
-            guard let navigationController = storyboard?.instantiateViewController(identifier: "speechNC") else { return }
-            present(navigationController, animated: true, completion: nil)
-            
-        case .TouchlessUIClassification:
-            guard let navigationController = storyboard?.instantiateViewController(identifier: "GestureUINC") else { return }
-            present(navigationController, animated: true, completion: nil)
-        }
+        present(items[indexPath.row].classificationType.viewController, animated: true, completion: nil)
     }
     
     //MARK: - Initializators
@@ -65,25 +49,42 @@ class StartScreenViewController: UITableViewController {
         
         let row0item = StartScreenItem(text: "Text classifer",
                                        emoji: "✍️",
-                                       classificationType: .TextClassification)
+                                       classificationType: .textClassification)
         items.append(row0item)
         
         let row1item = StartScreenItem(text: "Image classifer",
                                        emoji: "📷",
-                                       classificationType: .ImageClassification)
+                                       classificationType: .imageClassification)
         items.append(row1item)
         
         
         let row2item = StartScreenItem(text: "Touchless UI",
                                        emoji: "👋🏻",
-                                       classificationType: .TouchlessUIClassification)
+                                       classificationType: .touchlessUIClassification)
         items.append(row2item)
         
         let row3Item = StartScreenItem(text: "Speech to text",
                                        emoji: "🎤",
-                                       classificationType: .SpeechClassification)
+                                       classificationType: .speechClassification)
         items.append(row3Item)
                 
         super.init(coder: aDecoder)
+    }
+}
+
+@available(iOS 13.0, *)
+private extension CellClassificationType {
+    var viewController: UIViewController {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        switch self {
+        case .imageClassification:
+            return storyboard.instantiateViewController(identifier: "NavigationImageClassifer")
+        case .textClassification:
+            return storyboard.instantiateViewController(identifier: "NavigationTextClassifer")
+        case .touchlessUIClassification:
+            return storyboard.instantiateViewController(identifier: "GestureUINC")
+        case .speechClassification:
+            return storyboard.instantiateViewController(identifier: "speechNC")
+        }
     }
 }

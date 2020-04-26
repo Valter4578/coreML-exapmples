@@ -2,10 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Microphone Usage Description</key>
-	<string>For recognize your speech application need to permission for use microphone</string>
-	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>The application will use your voice to translate speech to text</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -24,10 +20,14 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>Microphone Usage Description</key>
+	<string>For recognize your speech application need to permission for use microphone</string>
 	<key>NSCameraUsageDescription</key>
 	<string>For you to shoot a photo for object recognition</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>For you to select a photo for object recognition</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>The application will use your voice to translate speech to text</string>
 	<key>UILaunchStoryboardName</key>
 	<string>Launch Screen</string>
 	<key>UIMainStoryboardFile</key>
