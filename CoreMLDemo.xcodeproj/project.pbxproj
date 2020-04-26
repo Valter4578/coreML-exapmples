@@ -15,11 +15,9 @@
 		8847AD39237C4C7400794E07 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8847AD38237C4C7400794E07 /* PlayerView.swift */; };
 		8855816D23D473D800BAFC34 /* example_5s0_hand_model.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8855816C23D473D800BAFC34 /* example_5s0_hand_model.mlmodel */; };
 		88745C242382C7BC00DC9CA2 /* GestureUIViewController+Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88745C232382C7BC00DC9CA2 /* GestureUIViewController+Camera.swift */; };
-		88AE5FAB21DF530700FBC632 /* FoodClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AE5FAA21DF530700FBC632 /* FoodClassificationViewController.swift */; };
 		88AE5FAD21DF53DD00FBC632 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88AE5FAC21DF53DD00FBC632 /* Food101.mlmodel */; };
 		88C103762366F39900CEB4AE /* Inceptionv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 88C103752366F39800CEB4AE /* Inceptionv3.mlmodel */; };
 		88D9F5AB23753D6900D00110 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D9F5AA23753D6900D00110 /* TableViewCell.swift */; };
-		88E754A42369B04B0010A834 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E754A32369B04B0010A834 /* Extension.swift */; };
 		88EA75FC21D3826F00D5D7AF /*  DocumentClassificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88EA75FB21D3826F00D5D7AF /*  DocumentClassificationViewController.swift */; };
 		88EA75FE21D39E9900D5D7AF /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88EA75FD21D39E9900D5D7AF /* Launch Screen.storyboard */; };
 		F44543791EF0461F0024AFAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44543781EF0461F0024AFAC /* AppDelegate.swift */; };
@@ -37,11 +35,9 @@
 		8847AD38237C4C7400794E07 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		8855816C23D473D800BAFC34 /* example_5s0_hand_model.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = example_5s0_hand_model.mlmodel; sourceTree = "<group>"; };
 		88745C232382C7BC00DC9CA2 /* GestureUIViewController+Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GestureUIViewController+Camera.swift"; sourceTree = "<group>"; };
-		88AE5FAA21DF530700FBC632 /* FoodClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodClassificationViewController.swift; sourceTree = "<group>"; };
 		88AE5FAC21DF53DD00FBC632 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
 		88C103752366F39800CEB4AE /* Inceptionv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Inceptionv3.mlmodel; sourceTree = "<group>"; };
 		88D9F5AA23753D6900D00110 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
-		88E754A32369B04B0010A834 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		88EA75FB21D3826F00D5D7AF /*  DocumentClassificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " DocumentClassificationViewController.swift"; sourceTree = "<group>"; };
 		88EA75FD21D39E9900D5D7AF /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C76FCD998A0339B742471159 /* Pods_CoreMLDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreMLDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +93,6 @@
 				8846D41E21D101D500AE04F6 /* StartScreenViewController.swift */,
 				88EA75FB21D3826F00D5D7AF /*  DocumentClassificationViewController.swift */,
 				F445437A1EF0461F0024AFAC /* ViewController.swift */,
-				88AE5FAA21DF530700FBC632 /* FoodClassificationViewController.swift */,
 				88407F2E2379B34A008BCC5D /* GestureUIViewController.swift */,
 				88745C232382C7BC00DC9CA2 /* GestureUIViewController+Camera.swift */,
 				8836424B240EA40200B87595 /* SpeechViewController.swift */,
@@ -146,7 +141,6 @@
 				F445437F1EF0461F0024AFAC /* Assets.xcassets */,
 				F44543841EF0461F0024AFAC /* Info.plist */,
 				88EA75FD21D39E9900D5D7AF /* Launch Screen.storyboard */,
-				88E754A32369B04B0010A834 /* Extension.swift */,
 			);
 			path = CoreMLDemo;
 			sourceTree = "<group>";
@@ -271,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E754A42369B04B0010A834 /* Extension.swift in Sources */,
 				8836424C240EA40200B87595 /* SpeechViewController.swift in Sources */,
 				8846D42121D1029C00AE04F6 /* StartScreenItem.swift in Sources */,
 				88AE5FAD21DF53DD00FBC632 /* Food101.mlmodel in Sources */,
@@ -284,7 +277,6 @@
 				88C103762366F39900CEB4AE /* Inceptionv3.mlmodel in Sources */,
 				F44543791EF0461F0024AFAC /* AppDelegate.swift in Sources */,
 				8855816D23D473D800BAFC34 /* example_5s0_hand_model.mlmodel in Sources */,
-				88AE5FAB21DF530700FBC632 /* FoodClassificationViewController.swift in Sources */,
 				88745C242382C7BC00DC9CA2 /* GestureUIViewController+Camera.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +406,7 @@
 				DEVELOPMENT_TEAM = 44ZWCLCJ2W;
 				INFOPLIST_FILE = CoreMLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maksim.mrvalter566;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineapple.Valtegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -429,7 +421,7 @@
 				DEVELOPMENT_TEAM = 44ZWCLCJ2W;
 				INFOPLIST_FILE = CoreMLDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.maksim.mrvalter566;
+				PRODUCT_BUNDLE_IDENTIFIER = Pineapple.Valtegram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

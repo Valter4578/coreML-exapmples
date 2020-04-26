@@ -7,10 +7,7 @@
 //
 
 import UIKit
-import SceneKit
-import ARKit
 import Vision
-import AVFoundation
 import AVKit
 
 enum RemoteCommand: String {
@@ -18,7 +15,6 @@ enum RemoteCommand: String {
     case open = "FIVE-UB-RHand"
     case fist = "fist-UB-RHand"
 }
-
 
 @available(iOS 13.0, *)
 class GestureUIViewController: UIViewController {
@@ -55,14 +51,9 @@ class GestureUIViewController: UIViewController {
         
         emojiLabel.text = ""
         
-        isGestureUIPresented = true
-        
-        if isGestureUIPresented {
-            setupPlayer()
-            setupVision()
-            setupAirPlay()
-        }
-
+        setupPlayer()
+        setupVision()
+        setupAirPlay()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -70,7 +61,6 @@ class GestureUIViewController: UIViewController {
         isGestureUIPresented = true
         prepareCamera()
     }
-    
     
     //MARK: - Private methods
     private func setupVision() {
@@ -93,9 +83,7 @@ class GestureUIViewController: UIViewController {
     private func setupPlayer() {
         guard let url = URL(string: "http:/commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4") else { return }
         playerView.setPlayerURL(url: url)
-        print(#function)
         playerView.player.play()
-        print(#function)
     }
     
     private func handleClassification(request: VNRequest, error: Error?) {
@@ -105,9 +93,9 @@ class GestureUIViewController: UIViewController {
         }
         
         let classification = observation
-            .compactMap({$0 as? VNClassificationObservation})
-            .filter({$0.confidence > 0.5})
-            .map({$0.identifier})
+            .compactMap {$0 as? VNClassificationObservation}
+            .filter {$0.confidence > 0.5}
+            .map {$0.identifier}
         
         switch classification.first {
         case "no-hand":
@@ -122,18 +110,17 @@ class GestureUIViewController: UIViewController {
         
         print(classification)
     }
-    
-
-    
-    func showAndSendCommand(_ command: RemoteCommand) {
+        
+    private func showAndSendCommand(_ command: RemoteCommand) {
         DispatchQueue.main.async {
-            if command == .open {
+            switch command {
+            case .open:
                 self.playerView.player.play()
                 self.emojiLabel.text = "✋"
-            } else if command == .fist {
+            case .fist:
                 self.playerView.player.pause()
                 self.emojiLabel.text = "✊"
-            } else if command == .none {
+            case .none:
                 self.emojiLabel.text = "❎"
             }
         }
@@ -141,8 +128,6 @@ class GestureUIViewController: UIViewController {
     
     //MARK: - Actions
     @IBAction func cancelClicked(_ sender: UIBarButtonItem) {
-        isGestureUIPresented = false
         dismiss(animated: true, completion: nil)
     }
-    
 }
